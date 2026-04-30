@@ -49,12 +49,62 @@ their daily habits and understand how lifestyle affects academic success.
 </ul>
 </div>
 </section>
+<!-- ---------------- WELLNESS TRACKERS ---------------- -->
+
+<section>
+  <div class="section-content">
+    <h2>🍽 Meal Tracker</h2>
+
+    <div class="tracker-box">
+      <label><input type="checkbox" class="meal-check"> I had breakfast</label><br>
+      <label><input type="checkbox" class="meal-check"> I had lunch</label><br>
+      <label><input type="checkbox" class="meal-check"> I had dinner</label>
+
+      <p id="mealProgress">0/3 meals completed</p>
+      <p id="mealCongrats" class="success-msg"></p>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="section-content">
+    <h2>📚 Assignment Tracker</h2>
+
+    <div class="tracker-box">
+      <input type="text" id="assignmentName" placeholder="Assignment name">
+      <input type="date" id="assignmentDate">
+      <button id="addAssignment">Add</button>
+
+      <ul id="assignmentList"></ul>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="section-content">
+    <h2>😴 Sleep Tracker</h2>
+
+    <div class="tracker-box">
+      <label>Start Time:</label>
+      <input type="time" id="sleepStart">
+
+      <label>End Time:</label>
+      <input type="time" id="sleepEnd">
+
+      <button id="checkSleep">Check Sleep</button>
+
+      <p id="sleepResult"></p>
+    </div>
+  </div>
+</section>
 
 </main>
 
 <footer>
 <p>CS146 Project</p>
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
