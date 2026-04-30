@@ -254,3 +254,48 @@ footer {
     padding: var(--space-sm) 0;
   }
 }
+.tracker-box {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tracker-box input,
+.tracker-box button {
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+}
+
+.tracker-box button {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tracker-box button:hover {
+  background-color: var(--primary-hover);
+}
+
+.success-msg {
+  color: green;
+  font-weight: 500;
+}
+
+#assignmentList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#assignmentList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-sm);
+}
